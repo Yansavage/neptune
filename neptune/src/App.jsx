@@ -6,6 +6,7 @@ import { Home } from './body/Homepage'
 import { Message } from './body/MessagePages'
 import { Search } from './body/Searchpage'
 
+//firts coment 
 function App() {
   return (
     <div className='flex flex-row'>
@@ -15,7 +16,6 @@ function App() {
         ))}
       </div>
       <div className='bg-yellow-200 basis-1/2'>
-      
         <Routes>
             <Route path="/" element= {<Home/>}/>
             <Route path="messages" element= {<Message/>}/>
