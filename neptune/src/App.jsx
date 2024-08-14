@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './body/Homepage'
 import { Message } from './body/MessagePages'
 import { Search } from './body/Searchpage'
+import { Body } from './body/Body'
 
 //firts coment 
 function App() {
@@ -12,16 +13,11 @@ function App() {
     <div className='flex flex-row'>
       <div className='basis-1/4 flex flex-col'>
         {Tabs.map((info) => (
-          <LeftWing text={info.text}></LeftWing>
+          <LeftWing LinkPath={info.LinkPath} text={info.text}></LeftWing>
         ))}
       </div>
       <div className='bg-yellow-200 basis-1/2'>
-        <Routes>
-            <Route path="/" element= {<Home/>}/>
-            <Route path="messages" element= {<Message/>}/>
-            <Route path="search" element= {<Search/>}/>
-        </Routes>
-        
+        <Body></Body>
       </div>
       <div className='bg-blue-200 basis-1/4'>
         <Rightwing ></Rightwing>

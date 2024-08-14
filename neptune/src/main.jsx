@@ -12,7 +12,7 @@ import { Search } from './body/Searchpage.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "*",
     element: <App/>,
     errorElement: <ErrorPage/>,
     children: [
